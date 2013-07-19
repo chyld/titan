@@ -11,5 +11,8 @@
 @interface CMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) NSTask *task;
+- (IBAction)getBuckets:(id)sender;
+- (void)fromRuby:(NSNotification *)aNotification;
 
 @end

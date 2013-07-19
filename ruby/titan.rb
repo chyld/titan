@@ -27,6 +27,7 @@ def show_menu
   when 'v'
     puts `ruby -v`
   when 'l'
+    puts 'CMD:L'
     $s3.buckets.each {|bucket| puts bucket.name}
   when 'c'
     print 'bucket name: '
